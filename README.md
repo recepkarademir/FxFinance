@@ -13,5 +13,5 @@ Java FXFinance yazılımı kişisel finans yönetimi sağlar. </br>Türkiye Cumh
       
 ## Teşekkür(Acknowledgments)
 
-Gluon (Scene Builder)
+Gluon (Scene Builder)</br>
 Freepik Company S.L. (FlatIcon)
