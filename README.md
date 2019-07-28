@@ -1,2 +1,4 @@
-# FxFinance
- JavaFx Desktop Finance Application
+# JavaFx Desktop Personal Finance Application
+
+![BaslikFoto](finance.jpg)
+
