@@ -11,3 +11,7 @@ Bu proje bilgisayar üzerinden kişisel basit borsa işlemlerinin kayıtlarını
 
 Java FXFinance yazılımı kişisel finans yönetimi sağlar. </br>Türkiye Cumhuriyet Merkez Bankası tarafından yayınlanan güncel döviz kurları güncel olarak alınır. </br>Kullanıcı mevcut para miktarını ayrıntılı olarak görüntüleyebilir. </br>Belirli bir döviz kuru geçmişini görüntülenmesi çizgi grafiklerle yapılır. </br>Kullanıcı her para birimi için belirli üst ve alt sınırlar için alarm kurabilir. </br>Yazılım bu sınır değerlere ulaşıldığında kullanıcıyı bilgilendirir.
       
+## Teşekkür(Acknowledgments)
+
+Gluon (Scene Builder)
+Freepik Company S.L. (FlatIcon)
