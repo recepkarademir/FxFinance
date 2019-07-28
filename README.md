@@ -9,5 +9,5 @@ Bu proje bilgisayar üzerinden kişisel basit borsa işlemlerinin kayıtlarını
 ## Lisans(License)
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://github.com/recepkarademir/FxFinance/blob/master/LICENSE) [MIT](/LICENSE)
 
-Java FXFinance yazılımı kişisel finans yönetimi sağlar. </br>Türkiye Cumhuriyet Merkez Bankası tarafından yayınlanan güncel döviz kurları güncel olarak alınır. Kullanıcı mevcut para miktarını ayrıntılı olarak görüntüleyebilir. Belirli bir döviz kuru geçmişini görüntülenmesi çizgi grafiklerle yapılır. Kullanıcı her para birimi için belirli üst ve alt sınırlar için alarm kurabilir. Yazılım bu sınır değerlere ulaşıldığında kullanıcıyı bilgilendirir.
+Java FXFinance yazılımı kişisel finans yönetimi sağlar. </br>Türkiye Cumhuriyet Merkez Bankası tarafından yayınlanan güncel döviz kurları güncel olarak alınır. </br>Kullanıcı mevcut para miktarını ayrıntılı olarak görüntüleyebilir. </br>Belirli bir döviz kuru geçmişini görüntülenmesi çizgi grafiklerle yapılır. </br>Kullanıcı her para birimi için belirli üst ve alt sınırlar için alarm kurabilir. </br>Yazılım bu sınır değerlere ulaşıldığında kullanıcıyı bilgilendirir.
       
