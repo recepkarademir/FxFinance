@@ -1,0 +1,115 @@
+Öğretim Görevlisi Ahmet Nusret Toprak yeni bir not gönderdi. Eğitmeniniz, kullanıcı e-posta tercihlerini atlayarak herkesi bu yayının gerçek zamanlı olarak bilgilendirmesini seçti.
+
+BZ 214 Görsel Programlama Yaz Dönemi Ödevi
+
+BZ 214 Görsel Programlama Yaz Dönemi Ödevi
+
+
+
+Kişisel Finans Yazılımı
+
+
+
+Bu ödevin amacı, ustalığınızı gösteren kişisel bir finans yazılımı oluşturmaktır:
+
+· Model-View-Controller tasarım deseni
+
+· Java FX, Grafikler ve Görsel Şekiller
+
+· Web sayfalarından Veri Çıkarma
+
+· Veritabanı Yönetimi.
+
+
+
+Bu ödevde bir JavaFX Kişisel Finans Yazılımını uygulayacaksınız.
+
+
+
+· Yazılımınız, Türkiye Cumhuriyet Merkez Bankası tarafından yayınlanan güncel döviz kurlarını otomatik olarak almalıdır (Türkiye Cumhuriyeti Merkez Bankası, TCMB). Döviz kurları için günlük olarak güncellenen http://www.tcmb.gov.tr/kurlar/today.xml adresini kullanacaksınız. (Not: Döviz kuru, başka bir yabancıya çevrilmesinde kullanılan bir para biriminin değeridir.)
+
+· Yazılımınız, günlük döviz kurlarını tasarladığınız veri tabanında tutmalıdır.
+
+· Kullanıcı, bazı bilgileri sağlayarak kişisel finans yazılımına kaydolabilmelidir (Kayıt formunda hangi bilgilerin isteneceğine karar verin).
+
+· Kullanıcı geçerli bir kullanıcı adı ve şifre kombinasyonu ile giriş yapabilmelidir.
+
+· Kullanıcı, yazılımını kullanarak parasını yönetebilmelidir.
+
+o Kullanıcı, parasının miktarını, yazılıma farklı oranlarda girebilmelidir.
+
+o Yazılımınız, kullanıcının mevcut para miktarını ayrıntılı olarak görmesine izin vermelidir. Yazılımınız, kullanıcının her bir dilimin farklı bir para birimini temsil ettiği bir pasta grafiğiyle toplam parasını göstermesi gerekir.
+
+o Yazılımınızın, kullanıcının parasını veritabanında depolanan mevcut değerlere göre dönüştüren bir para birimi dönüştürücü hesap makinesi olması gerekir.
+
+o Yazılımınızda, kullanıcının belirli bir döviz kuru geçmişini görmesine izin veren çizgi grafiklere sahip olması gerekir.
+
+o Kullanıcı her para birimi için belirli üst ve alt sınırlar koyabiliyor olmalıdır. Yazılımınız, bu sınır değerlere ulaşıldığında kullanıcıyı bilgilendirmelidir.
+
+
+
+TCMB Web Sitesinden Veri Çıkarma
+
+
+Türkiye Cumhuriyet Merkez Bankası (TCMB), günlük olarak gösterge döviz kurlarını http://www.tcmb.gov.tr/kurlar/today.xml adresinde yayınlamaktadır. Veriler, aşağıdaki örnekte gördüğünüz gibi XML biçiminde sağlanmıştır:
+
+
+
+<Currency CrossOrder="0" Kod="USD" CurrencyCode="USD">
+
+                    <Unit>1</Unit>
+
+                    <Isim>ABD DOLARI</Isim>
+
+                    <CurrencyName>US DOLLAR</CurrencyName>
+
+                    <ForexBuying>5.6916</ForexBuying>
+
+                    <ForexSelling>5.7019</ForexSelling>
+
+                    <BanknoteBuying>5.6877</BanknoteBuying>
+
+                    <BanknoteSelling>5.7104</BanknoteSelling>
+
+                    <CrossRateUSD/>
+
+                    <CrossRateOther/>
+
+</Currency>
+
+
+
+
+Bir XML belgesinden içerik ayıklamak için iki seçeneğiniz var:
+
+1. Verilen URL için bir akış açmak için java.net.URL ve Tarayıcı sınıflarını kullanabilirsiniz. Ardından Regular Expression kullanarak veri ayıklayabilirsiniz.
+
+2. javax.xml.parsers ve org.w3c.dom kütüphanelerini kullanabilirsiniz. (Not: Bu alternatife daha az not verilecektir.)
+
+
+
+Veritabanı
+
+Kullanıcı ve para birimi verilerinin kişisel bilgilerini saklamak için bir veritabanı oluşturmanız gerekir. Veritabanınızı tasarlamakta özgürsünüz. (Şifreyi düz metin alanına kaydetmeyi unutmayın, korkunç bir fikirdir. Karma kullanmaya çalışın.) BZ 214'te MySQL üzerinde çalışacağız, bu nedenle projeniz için MySQL kullanmanız önerilir.
+
+
+
+Programlama İpuçları
+
+Erken ve sık sık test edin. Programınızı adım adım tasarlayın, küçük parçalar halinde kodlamanız gerekir. Bazı kodları yazıp derlemesini ve doğru çalışmasını sağlayın ve ardından devam edin.
+Bir IDE kullanın. Verimliliğinizi büyük ölçüde artıracak ve kırpılacak sorunların hata ayıklamasını kolaylaştıracak bazı mükemmel Java araçları vardır. IntelliJ ve Eclipse, hem mükemmel Java IDE'leridir hem de şiddetle tavsiye edilir.
+
+
+
+Belgeleme
+
+Projenizin sonunda, çalışmanızı tanımlayan ayrıntılı bir belge hazırlamanız gerekir. Projeniz hakkında ayrıntılı bilgi vermeli, sınıf sunmalı ve use-case diyagramları kullanmalı ve her ekip üyesinin projeye katkısını açıklayan bir tablo sağlamalısınız. Proje raporunuz için ERUDM'de bir şablon bulabilirsiniz.
+Akademik Dürüstlük ve Takım Çalışması
+
+Dürüstlük ve doğruluk çok önemlidir. Asla başkalarının çalışmalarını kendi eserin olarak gönderme. Aynı kodu bir dış kaynaktan veya başka bir gruptan kopyalayan veya birisinin projesinden kopyalamasına izin veren bir grup 0 puan alır.
+Her grubun bir takım lideri olması gerekir. Takım liderleri takımlarına liderlik etmeli ve görevleri dağıtmalıdır. Her üye ekibin çalışmasına katkıda bulunmalıdır.
+
+
+Not: Üçüncü taraf araç takımlarına veya kitaplıklara izin verilmez, ancak derste verilen örnek kodlardan herhangi birini kullanabilirsiniz.
+
+İyi şanslar.

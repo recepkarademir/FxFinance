@@ -1,0 +1,93 @@
+Instructor Ahmet Nusret Toprak posted a new Note. Your instructor selected to notify everyone in real time of this post, bypassing user email preferences.
+
+BZ 214 Visual Programming Summer Term Assignment
+BZ 214 Visual Programming Summer Term Assignment
+
+
+Personal Finance Software
+
+The goal of this assignment is to build a personal finance software, demonstrating your mastery of:
+
+·         Model-View-Controller design pattern
+·         Java FX, Graphics and Charts
+·         Extracting Data from Web pages
+·         Database management.
+
+
+In this assignment, you will be implementing a JavaFX Personal Finance Software.
+
+
+·  Your software should automatically get the current currency exchange rates published by the Central Bank of the Republic of Turkey (Türkiye Cumhuriyeti Merkez Bankası, TCMB). For the currency exchange rates, you will use the http://www.tcmb.gov.tr/kurlar/today.xml which is updated daily. (Note: Exchange rate is the value of one currency for the conversion to another foreign.)
+·  Your software should keep daily currency exchange rates in the database that you designed.
+·  The user should be able to register to the personal finance software by providing some information (Decide which information will be requested in the registration form)
+·  The user should be able to login with a valid username and password combination.
+·  The user should be able to manage his/her money by using your software.
+
+o  The user should be able to enter the amount of his/her money at the different rates to the software
+o  Your software should allow the user to see his/her current amount of money in detail. Your software must show user’s total money with a pie chart in which each slice represents a different currency.
+o  Your software must have a currency converter calculator that converts the user’s money based on current values stored in the database.
+o  Your software must have line charts that let the user to see specific pair's currency rate history.
+o  The user should be able to set specific upper and lower limits for each currency. Your software should inform the user when these limit values are reached.
+
+ 
+
+Extracting Data from TCMB Web Site
+
+Türkiye Cumhuriyet Merkez Bankası (TCMB) announce indicative exchange rates daily on the http://www.tcmb.gov.tr/kurlar/today.xml. The data is provided in XML format as you see in the following example:
+
+<Currency CrossOrder="0" Kod="USD" CurrencyCode="USD">
+
+                    <Unit>1</Unit>
+
+                    <Isim>ABD DOLARI</Isim>
+
+                    <CurrencyName>US DOLLAR</CurrencyName>
+
+                    <ForexBuying>5.6916</ForexBuying>
+
+                    <ForexSelling>5.7019</ForexSelling>
+
+                    <BanknoteBuying>5.6877</BanknoteBuying>
+
+                    <BanknoteSelling>5.7104</BanknoteSelling>
+
+                    <CrossRateUSD/>
+
+                    <CrossRateOther/>
+
+</Currency>
+
+ 
+
+You have two alternatives to extract content from a XML document:
+1.      You can use java.net.URL and Scanner classes to open a stream for given URL. Then you can extract data by using Regular Expression
+2.      You can use javax.xml.parsers and org.w3c.dom libraries. (Note: This alternative will be given less marks.)
+
+ 
+
+Database
+You need to create a database to store personal information of user and currency data. You are free to design your database. (Remember storing the password in a plain-text field is a horrible idea. Try to use hashing.) In the BZ 214 we will work on MySQL, so it is recommended to use MySQL for your project.
+
+ 
+
+Programming Tips
+
+Test early, and often. Design your program in steps, you should code it in small parts. Write some code get it to compile and run correctly, and then move on.
+Use an IDE. There are some excellent Java tools that will greatly improve your productivity and make it easier to debug problems that will crop up. IntelliJ and Eclipse are both excellent Java IDEs and highly recommended.
+
+ 
+
+Documentation
+
+At the end of your project, you must prepare a detailed document that describes your work. You must give details about your project, provide class and use case diagrams, and provide a table explaining the contribution of each team member to the project. You can find a template for your project report on the ERUDM.
+Academic Honesty and Teamwork
+
+ 
+
+Honesty and integrity are very important. Never submit the work of others as your own. A group which copies the same code from an outside source or another group or allows someone to copy from their project will receive 0 points.
+Each group must have a team leader. Team leaders must lead their teams and distribute tasks. Each member must contribute to the team’s work.
+
+
+Note: No third-party toolkits or libraries are allowed but you may use any of the sample code provided in this course
+
+Good Luck.
