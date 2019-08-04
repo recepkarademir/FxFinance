@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #bbbbbb;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="financeAppController.WelcomeController">
+   <children>
+      <BorderPane layoutY="144.0" prefHeight="155.0" prefWidth="600.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="32.0" prefHeight="29.0" prefWidth="223.0" text="Kişisel Finans Yazılımı Bilgi" wrapText="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff692d" />
+                  <Stop color="#903349" offset="0.24021748441715848" />
+                  <Stop color="#2f37d9" offset="0.9999999838411803" />
+                  <Stop color="#2f37d9" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Separator layoutX="1.0" layoutY="14.0" prefHeight="11.0" prefWidth="600.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Separator>
+      <Separator layoutY="375.0" prefHeight="11.0" prefWidth="600.0" />
+      <Hyperlink fx:id="Location" layoutX="149.0" layoutY="346.0" onAction="#click" text="Detaylar: https://github.com/recepkarademir/FxFinance" visited="true" />
+      <ImageView fitHeight="139.0" fitWidth="155.0" layoutX="455.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@lineChart.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="139.0" layoutX="14.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pieChart.png" />
+         </image>
+      </ImageView>
+      <TextArea editable="false" layoutX="14.0" layoutY="61.0" prefHeight="174.0" prefWidth="574.0" style="-fx-background-color: #9dff97;" text="&#10;Java FXFinance yazılımı kişisel finans yönetimi sağlar.&#10;&#10;Türkiye Cumhuriyet Merkez Bankası tarafından yayınlanan güncel döviz kurları güncel olarak alınır.&#10;Kullanıcı mevcut para miktarını ayrıntılı olarak görüntüleyebilir.&#10;Belirli bir döviz kuru geçmişini görüntülenmesi çizgi grafiklerle yapılır.&#10;Kullanıcı her para birimi için belirli üst ve alt sınırlar için alarm kurabilir.&#10;Yazılım bu sınır değerlere ulaşıldığında kullanıcıyı bilgilendirir.&#10;                                                                                                                                                               2019" wrapText="true" />
+      <Label layoutX="228.0" layoutY="273.0" prefHeight="52.0" prefWidth="166.0" text="FXFinance">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff692d" />
+                  <Stop color="#903349" offset="0.34190587116607746" />
+                  <Stop color="#2f37d9" offset="0.7165051036090745" />
+                  <Stop color="#2f37d9" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Italic" size="35.0" />
+         </font>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="1.0" right="1.0" />
+   </padding>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

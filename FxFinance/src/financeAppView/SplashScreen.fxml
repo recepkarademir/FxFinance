@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="501.0" fitWidth="582.0" layoutX="1.0" layoutY="4.0" pickOnBounds="true">
+         <image>
+            <Image url="@financialSplash.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="488.0" layoutY="434.0" prefHeight="52.0" prefWidth="63.0" text="2019">
+         <font>
+            <Font name="Aparajita Bold Italic" size="36.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#f47616" />
+                  <Stop color="#0b03ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="301.0" layoutY="22.0" prefHeight="75.0" prefWidth="283.0" text="   FxFinance ">
+         <font>
+            <Font name="Aparajita Bold Italic" size="54.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#f47616" />
+                  <Stop color="#0b03ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Line endX="453.03436279296875" endY="-12.999988555908203" fill="#c10000" layoutX="125.0" layoutY="15.0" startX="-121.70972442626953" startY="-12.999990463256836" strokeWidth="7.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#9e1a1a" />
+                  <Stop color="#162998" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="-133.99998474121094" endY="467.65093994140625" fill="#c10000" layoutX="136.0" layoutY="29.0" startX="-134.0" startY="-24.99999237060547" strokeWidth="7.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#9e1a1a" />
+                  <Stop color="#162998" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="441.0" endY="472.9999694824219" fill="#c10000" layoutX="141.0" layoutY="28.0" startX="441.08819580078125" startY="-24.99999237060547" strokeWidth="7.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#162998" />
+                  <Stop color="#162998" offset="0.007639468693833185" />
+                  <Stop color="#9e1a1a" offset="0.9999999838411803" />
+                  <Stop color="#9e1a1a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="-130.5" endY="489.214111328125" fill="#c10000" layoutX="134.0" layoutY="13.0" startX="444.5882568359375" startY="488.60064697265625" strokeWidth="7.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#162998" />
+                  <Stop color="#162998" offset="0.007639468693833185" />
+                  <Stop color="#9e1a1a" offset="0.9999999838411803" />
+                  <Stop color="#9e1a1a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+   </children>
+</AnchorPane>
