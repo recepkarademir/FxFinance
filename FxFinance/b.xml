@@ -298,7 +298,7 @@ div.post_author_date a{text-decoration:none}
 .item .post-title,.static_page .post-title{color:#010101;display:inline-block;padding-bottom:5px;font-size:31px;line-height:1.33;font-weight:700;position:relative}
 .item .post-body,.static_page .post-body{width:100%;color:#5E5E5E;font-size:15px;line-height:1.5em;overflow:hidden}
 .item .post-outer{padding:0}
-.item .post-body img{max-width:100%}
+.item .post-body img{width:auto;height:auto}
 .post-meta a,.post-meta i{color:#CBCBCB}
 .post-timestamp{margin-left:5px}
 .label-head{margin-left:5px}
@@ -618,7 +618,7 @@ body#layout #footer-wrapper{overflow:hidden}
 body#layout .sect-left{width:28.3%;float:left}
 body#layout #social-footer{width:30%;float:right}
 body#layout #unwanted{display:none!important}
-#layout:before {    content: 'This is the property of ThemeXpose.com';
+#layout:before {    content: 'Bu tema Recep Karademir'e aittir.';
 text-transform: uppercase;
 font-size: 20px;
 color: #999;
@@ -827,7 +827,7 @@ var related_number = 3;
     <b:section class='option' id='option' maxwidgets='1' name='Theme Option' showaddelement='yes'>
       <b:widget id='HTML103' locked='true' title='Widget Recent Post No.' type='HTML' version='1'>
         <b:widget-settings>
-          <b:widget-setting name='content'/>
+          <b:widget-setting name='content'>1</b:widget-setting>
         </b:widget-settings>
         <b:includable id='main'>
          <b:if cond='data:content == &quot;&quot;'>
@@ -847,7 +847,7 @@ var related_number = 3;
       </b:widget>
       <b:widget id='HTML104' locked='true' title='Widget Random Post No.' type='HTML' version='1'>
         <b:widget-settings>
-          <b:widget-setting name='content'/>
+          <b:widget-setting name='content'>randomposts</b:widget-setting>
         </b:widget-settings>
         <b:includable id='main'>
          <b:if cond='data:content == &quot;&quot;'>
@@ -995,7 +995,7 @@ $(window).bind(&quot;load&quot;,function(){$(&#39;.Label a,.postags a,.m-rec h2 
 <div class='header-content row'>
 <div class='header-logo'>
 <b:section id='logo_blog' maxwidgets='1' name='Logo' showaddelement='yes'>
-  <b:widget id='Header1' locked='true' title='EveryDay. (Header)' type='Header' version='1'>
+  <b:widget id='Header1' locked='true' title='R.C.P (Üstbilgi)' type='Header' version='1'>
     <b:widget-settings>
       <b:widget-setting name='displayUrl'/>
       <b:widget-setting name='displayHeight'>0</b:widget-setting>
@@ -1075,28 +1075,6 @@ $(window).bind(&quot;load&quot;,function(){$(&#39;.Label a,.postags a,.m-rec h2 
   </b:widget>
 </b:section>
 </div>
-
-<div class='header-ads'>
-<b:section id='ads-content' maxwidgets='1' name='Ads 728x90' showaddelement='yes'>
-  <b:widget id='HTML1' locked='false' title='' type='HTML'>
-    <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<img src="http://demo.aggressivemotions.com/barcelona/wp-content/uploads/2015/10/cocuk6.jpg"/>]]></b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
-</b:includable>
-  </b:widget>
-</b:section>
-</div>
-
 </div>
 </div>
 
@@ -1173,9 +1151,9 @@ $(window).bind(&quot;load&quot;,function(){$(&#39;.Label a,.postags a,.m-rec h2 
     <!-- Intro Posts -->
     <div class='intro' id='intro'>
       <b:section class='intro-sec' id='intro-sec' maxwidgets='1' name='Intro Posts' showaddelement='yes'>
-        <b:widget id='HTML22' locked='false' title='' type='HTML'>
+        <b:widget id='HTML22' locked='false' title='Yeni Konular' type='HTML'>
           <b:widget-settings>
-            <b:widget-setting name='content'>Featured</b:widget-setting>
+            <b:widget-setting name='content'>recent</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -1200,7 +1178,10 @@ $(window).bind(&quot;load&quot;,function(){$(&#39;.Label a,.postags a,.m-rec h2 
 
 <div id='ads-blog'>
   <b:section class='home-ad' id='ads-home' maxwidgets='1' name='Ads Home/Post (728x90)' showaddelement='yes'>
-    <b:widget id='HTML4' locked='false' title='' type='HTML'>
+    <b:widget id='HTML4' locked='false' title='About The Author' type='HTML'>
+      <b:widget-settings>
+        <b:widget-setting name='content'/>
+      </b:widget-settings>
       <b:includable id='main'>
   <!-- only display title if it's non-empty -->
   <b:if cond='data:title != &quot;&quot;'>
@@ -1219,26 +1200,31 @@ $(window).bind(&quot;load&quot;,function(){$(&#39;.Label a,.postags a,.m-rec h2 
 
 
     <b:section class='main' id='main' maxwidgets='2' name='Main Wrapper' showaddelement='yes'>
-      <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='1'>
+      <b:widget id='Blog1' locked='true' title='Blog Kayıtları' type='Blog' version='1'>
         <b:widget-settings>
-          <b:widget-setting name='showDateHeader'>true</b:widget-setting>
-          <b:widget-setting name='style.textcolor'>#f2132d</b:widget-setting>
+          <b:widget-setting name='commentLabel'>Comments</b:widget-setting>
           <b:widget-setting name='showShareButtons'>true</b:widget-setting>
           <b:widget-setting name='authorLabel'>By</b:widget-setting>
+          <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
+          <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+          <b:widget-setting name='reactionsLabel'>Reactions</b:widget-setting>
+          <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+          <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+          <b:widget-setting name='showLocation'>false</b:widget-setting>
+          <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+          <b:widget-setting name='postsPerAd'>3</b:widget-setting>
+          <b:widget-setting name='style.bordercolor'>#000000</b:widget-setting>
+          <b:widget-setting name='backlinksLabel'>Related Posts</b:widget-setting>
+          <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+          <b:widget-setting name='style.textcolor'>#f2132d</b:widget-setting>
           <b:widget-setting name='showCommentLink'>true</b:widget-setting>
           <b:widget-setting name='style.urlcolor'>#1e87f0</b:widget-setting>
           <b:widget-setting name='showAuthor'>false</b:widget-setting>
           <b:widget-setting name='style.linkcolor'>#1e87f0</b:widget-setting>
-          <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
           <b:widget-setting name='style.bgcolor'>#000000</b:widget-setting>
-          <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
-          <b:widget-setting name='style.layout'>1x1</b:widget-setting>
           <b:widget-setting name='showLabels'>true</b:widget-setting>
-          <b:widget-setting name='showLocation'>true</b:widget-setting>
-          <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-          <b:widget-setting name='postsPerAd'>3</b:widget-setting>
+          <b:widget-setting name='postLabelsLabel'>Etiketler</b:widget-setting>
           <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-          <b:widget-setting name='style.bordercolor'>#000000</b:widget-setting>
           <b:widget-setting name='showInlineAds'>true</b:widget-setting>
           <b:widget-setting name='showReactions'>false</b:widget-setting>
         </b:widget-settings>
@@ -2100,12 +2086,12 @@ $(window).bind(&quot;load&quot;,function(){$(&#39;.Label a,.postags a,.m-rec h2 
                 <b:if cond='data:blog.pageType == &quot;error_page&quot;'>    
                 <div id='errr'>
                   <h1 class='nerrr'>4<span class='fa fa-exclamation-circle'/>4</h1>
-<h2 class='error'>Page Not Found!</h2>
-<p>Sorry, the page you were looking for in this blog does not exist.</p>
-<p>Go To Homepage by Button Below</p>
+<h2 class='error'>Sayfa Bulunamadı!</h2>
+<p>Üzgünüz, aradığın sayfa bu blogda bulunmuyor.</p>
+<p>Ana sayfaya dönmek için aşağıdaki butona basın.</p>
                   <span class='fa fa-hand-o-down'/>
 <div class='clear'/>
-<a class='homepage' href='/'>Home Page</a>
+<a class='homepage' href='/'>Ana Sayfa</a>
 </div>    
               </b:if>
               <b:if cond='data:blog.searchQuery'>
@@ -2452,9 +2438,191 @@ $(window).bind(&quot;load&quot;,function(){$(&#39;.Label a,.postags a,.m-rec h2 
       </div>
       <div class='sidebar-wrapper'>
     <b:section class='sidebar' id='sidebar' name='Sidebar Right' showaddelement='yes'>
-      <b:widget id='HTML2' locked='false' title='Recent Posts' type='HTML'>
+      <b:widget id='HTML1' locked='false' title='rastgele' type='HTML'>
         <b:widget-settings>
-          <b:widget-setting name='content'>recentposts</b:widget-setting>
+          <b:widget-setting name='content'>&lt;style&gt;
+#bo-rp-box{float:left;margin-bottom:10px;margin-top:0px;}
+#bo-rp-box ul{margin:0px;float:left;margin-left:20px;padding:0px;}
+#bo-rp-box li{vertical-align:middle;list-style:disc outside url(&quot;https://3.bp.blogspot.com/-iqPqAkSBMh0/WXdSEyG6qqI/AAAAAAAAAGc/HNrklKvbVk4Gs9IBguzz5ZURJM_WPMxJACLcBGAs/s1600/b1.png&quot;); margin-bottom:0;width:auto;margin-top:0;padding:10px 0;}
+#bo-rp-box a{color:#0F0F0F;text-decoration:none;font-size:14px}
+#bo-rp-box a:visited {text-decoration: none;color:blue;}
+#bo-rp-box a:hover{color:blue}
+&lt;/style&gt;
+&lt;script&gt;
+function rp_results_label(r){for(var e=0;e&lt;r.feed.entry.length;e++){var l=r.feed.entry[e];rpTitles[rpTitlesNumb]=l.title.$t;for(var t=0;t&lt;l.link.length;t++)if(&quot;alternate&quot;==l.link[t].rel){rpUrls[rpTitlesNumb]=l.link[t].href,rpTitlesNumb++;break}}}function removeRandomDuplicate(){for(var r=new Array(0),e=new Array(0),l=0;l&lt;rpUrls.length;l++)contains(r,rpUrls[l])||(r.length+=1,r[r.length-1]=rpUrls[l],e.length+=1,e[e.length-1]=rpTitles[l]);rpTitles=e,rpUrls=r}function contains(r,e){for(var l=0;l&lt;r.length;l++)if(r[l]==e)return!0;return!1}function showRandomLabels(){for(e=0;e&lt;rpUrls.length;e++)rpUrls[e]==currentposturl&amp;&amp;(rpUrls.splice(e,1),rpTitles.splice(e,1));var r=Math.floor((rpTitles.length-1)*Math.random()),e=0;for(rpTitles.length&gt;1&amp;&amp;document.write(&quot;&lt;ul&gt;&quot;);e&lt;rpTitles.length&amp;&amp;e&lt;20&amp;&amp;e&lt;maxresults;)document.write(&#39;&lt;li&gt;&lt;a href=&quot;&#39;+rpUrls[r]+&#39;&quot;&gt;&#39;+rpTitles[r]+&quot;&lt;/a&gt;&lt;/li&gt;&quot;),r&lt;rpTitles.length-1?r++:r=0,e++;document.write(&quot;&lt;/ul&gt;&quot;)}var rpTitles=new Array,rpTitlesNumb=0,rpUrls=new Array;
+&lt;/script&gt;
+&lt;div id=&quot;bo-rp-box&quot;&gt;
+&lt;script src=&quot;/feeds/posts/default?alt=json-in-script&amp;amp;callback=rp_results_label&amp;amp;max-results=10&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+var currentposturl=&quot;&quot;;
+var maxresults=6;
+removeRandomDuplicate(); showRandomLabels();
+&lt;/script&gt;
+&lt;/div&gt;</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML3' locked='false' title='' type='HTML'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA[<div style="display:scroll; position:fixed; top:150px; left:20px;"><img border="0" src="http://i1217.photobucket.com/albums/dd381/funywrld/semutfuny.gif" /> </div>]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='BlogArchive2' locked='false' title='Blog Arşivi' type='BlogArchive'>
+        <b:widget-settings>
+          <b:widget-setting name='showStyle'>MENU</b:widget-setting>
+          <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
+          <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
+          <b:widget-setting name='monthPattern'>MMMM</b:widget-setting>
+          <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
+          <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
+          <b:widget-setting name='chronological'>false</b:widget-setting>
+          <b:widget-setting name='showPosts'>false</b:widget-setting>
+          <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+  <div id='ArchiveList'>
+  <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
+    <b:include cond='data:style == &quot;HIERARCHY&quot;' data='data' name='interval'/>
+    <b:include cond='data:style == &quot;FLAT&quot;' data='data' name='flat'/>
+    <b:include cond='data:style == &quot;MENU&quot;' data='data' name='menu'/>
+  </div>
+  </div>
+  <b:include name='quickedit'/>
+  </div>
+</b:includable>
+        <b:includable id='flat' var='data'>
+  <ul class='flat'>
+    <b:loop values='data:data' var='i'>
+      <li class='archivedate'>
+        <a expr:href='data:i.url'><data:i.name/></a> (<data:i.post-count/>)
+      </li>
+    </b:loop>
+  </ul>
+</b:includable>
+        <b:includable id='interval' var='intervalData'>
+  <b:loop values='data:intervalData' var='interval'>
+    <ul class='hierarchy'>
+      <li expr:class='&quot;archivedate &quot; + data:interval.expclass'>
+        <b:include cond='data:interval.toggleId' data='interval' name='toggle'/>
+        <a class='post-count-link' expr:href='data:interval.url'>
+          <data:interval.name/>
+        </a>
+        <span class='post-count' dir='ltr'>(<data:interval.post-count/>)</span>
+        <b:include cond='data:interval.data' data='interval.data' name='interval'/>
+        <b:include cond='data:interval.posts' data='interval.posts' name='posts'/>
+      </li>
+    </ul>
+  </b:loop>
+</b:includable>
+        <b:includable id='menu' var='data'>
+  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
+    <option value=''><data:title/></option>
+    <b:loop values='data:data' var='i'>
+      <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
+    </b:loop>
+  </select>
+</b:includable>
+        <b:includable id='posts' var='posts'>
+  <ul class='posts'>
+    <b:loop values='data:posts' var='post'>
+      <li><a expr:href='data:post.url'><data:post.title/></a></li>
+    </b:loop>
+  </ul>
+</b:includable>
+        <b:includable id='toggle' var='interval'>
+  <a class='toggle' href='javascript:void(0)'>
+    <span expr:class='&quot;zippy&quot; + (data:interval.expclass == &quot;expanded&quot; ? &quot; toggle-open&quot; : &quot;&quot;)'>
+      <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
+        &#9660;&#160;
+      <b:elseif cond='data:blog.languageDirection == &quot;rtl&quot;'/>
+        &#9668;&#160;
+      <b:else/>
+        &#9658;&#160;
+      </b:if>
+    </span>
+  </a>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML2' locked='false' title='son konular' type='HTML'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>&lt;script type=&quot;text/javascript&quot;&gt;
+
+    function showlatestpostswiththumbs(t){document.write(&#39;&lt;ul class=&quot;recent-posts-container&quot;&gt;&#39;);for(var e=0;e&lt;posts_no;e++){var r,n=t.feed.entry[e],i=n.title.$t;if(e==t.feed.entry.length)break;for(var o=0;o&lt;n.link.length;o++){if(&quot;replies&quot;==n.link[o].rel&amp;&amp;&quot;text/html&quot;==n.link[o].type)var l=n.link[o].title,m=n.link[o].href;if(&quot;alternate&quot;==n.link[o].rel){r=n.link[o].href;break}}var u;try{u=n.media$thumbnail.url}catch(h){s=n.content.$t,a=s.indexOf(&quot;&lt;img&quot;),b=s.indexOf(&#39;src=&quot;&#39;,a),c=s.indexOf(&#39;&quot;&#39;,b+5),d=s.substr(b+5,c-b-5),u=-1!=a&amp;&amp;-1!=b&amp;&amp;-1!=c&amp;&amp;&quot;&quot;!=d?d:&quot;https://2.bp.blogspot.com/-C3Mo0iKKiSw/VGdK808U7rI/AAAAAAAAAmI/W7Ae_dsEVAE/s1600/no-thumb.png&quot;}var p=n.published.$t,f=p.substring(0,4),g=p.substring(5,7),v=p.substring(8,10),w=new Array;if(w[1]=&quot;Jan&quot;,w[2]=&quot;Feb&quot;,w[3]=&quot;Mar&quot;,w[4]=&quot;Apr&quot;,w[5]=&quot;May&quot;,w[6]=&quot;Jun&quot;,w[7]=&quot;Jul&quot;,w[8]=&quot;Aug&quot;,w[9]=&quot;Sep&quot;,w[10]=&quot;Oct&quot;,w[11]=&quot;Nov&quot;,w[12]=&quot;Dec&quot;,document.write(&#39;&lt;li class=&quot;recent-posts-list&quot;&gt;&#39;),1==showpoststhumbs&amp;&amp;document.write(&#39;&lt;a href=&quot;&#39;+r+&#39;&quot;&gt;&lt;img class=&quot;recent-post-thumb&quot; src=&quot;&#39;+u+&#39;&quot;/&gt;&lt;/a&gt;&#39;),document.write(&#39;&lt;div class=&quot;recent-post-title&quot;&gt;&lt;a href=&quot;&#39;+r+&#39;&quot; target =&quot;_top&quot;&gt;&#39;+i+&quot;&lt;/a&gt;&lt;/div&gt;&quot;),&quot;content&quot;in n)var A=n.content.$t;else if(&quot;summary&quot;in n)var A=n.summary.$t;else var A=&quot;&quot;;var k=/&lt;\S[^&gt;]*&gt;/g;if(A=A.replace(k,&quot;&quot;),1==post_summary)if(A.length&lt;summary_chars)document.write(A);else{A=A.substring(0,summary_chars);var y=A.lastIndexOf(&quot; &quot;);A=A.substring(0,y),document.write(A+&quot;...&quot;)}var _=&quot;&quot;,$=0;document.write(&#39;&lt;br&gt;&lt;div class=&quot;recent-posts-details&quot;&gt;&#39;),1==posts_date&amp;&amp;(_=_+w[parseInt(g,10)]+&quot; &quot;+v+&quot; &quot;+f,$=1),1==readmorelink&amp;&amp;(1==$&amp;&amp;(_+=&quot; | &quot;),_=_+&#39;&lt;a href=&quot;&#39;+r+&#39;&quot; class=&quot;url&quot; target =&quot;_top&quot;&gt;Read more&lt;/a&gt;&#39;,$=1),1==showcommentslink&amp;&amp;(1==$&amp;&amp;(_+=&quot; &lt;br&gt; &quot;),&quot;1 Comments&quot;==l&amp;&amp;(l=&quot;1 Comment&quot;),&quot;0 Comments&quot;==l&amp;&amp;(l=&quot;No Comments&quot;),l=&#39;&lt;a href=&quot;&#39;+m+&#39;&quot; target =&quot;_top&quot;&gt;&#39;+l+&quot;&lt;/a&gt;&quot;,_+=l,$=1),document.write(_),document.write(&quot;&lt;/div&gt;&quot;),document.write(&quot;&lt;/li&gt;&quot;)}document.write(&quot;&lt;/ul&gt;&quot;)}
+
+        &lt;/script&gt;
+
+        &lt;script type=&quot;text/javascript&quot;&gt;
+
+        var posts_no = 5;
+
+        var showpoststhumbs = true;
+
+        var readmorelink = true;
+
+        var showcommentslink = true;
+
+        var posts_date = true;
+
+        var post_summary = true;
+
+        var summary_chars = 40;&lt;/script&gt;
+
+    &lt;script src=&quot;https://recepkarademir.blogspot.com/feeds/posts/default?orderby=published&amp;alt=json-in-script&amp;callback=showlatestpostswiththumbs&quot;&gt;&lt;/script&gt;
+
+        
+
+        &lt;noscript&gt;Your browser does not support JavaScript!&lt;/noscript&gt;
+
+        &lt;link href=&#39;http://fonts.googleapis.com/css?family=Oswald&#39; rel=&#39;stylesheet&#39; type=&#39;text/css&#39;/&gt;
+
+        &lt;style type=&quot;text/css&quot;&gt;
+
+        img.recent-post-thumb{padding:2px;width:80px;height:80px;float:left;margin:0px 10px 10px;border: 1px solid #000000;}
+
+        .recent-posts-container {font-family:&#39;Oswald&#39;, sans-serif;font-size:12px;}
+
+        ul.recent-posts-container li{list-style-type: none; margin-bottom: 10px;font-size:12px;float:left;width:100%}
+
+        ul.recent-posts-container {counter-reset: countposts;list-style-type:none;padding:0;}
+
+    ul.recent-posts-container li:before {content: counter(countposts,decimal);counter-increment: countposts;z-index: 1;position:absolute; right : 0px; font-size: 14px;font-weight: bold;color: #fff;background #000000:;line-height:25px;height:25px;width:25px;text-align:center;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;}
+
+        .recent-posts-container a{text-decoration:none;}
+
+        .recent-post-title {margin-bottom:5px;}
+
+        .recent-post-title a {font-size:12px; text-transform: uppercase; color: #000000;}
+
+        .recent-posts-details {margin: 5px 0px 0px 92px;font-size:11px;}
+
+        .recent-posts-details a{color: #777;}
+
+        &lt;/style&gt;</b:widget-setting>
         </b:widget-settings>
         <b:includable id='main'>
   <!-- only display title if it's non-empty -->
@@ -2484,7 +2652,7 @@ $(window).bind(&quot;load&quot;,function(){$(&#39;.Label a,.postags a,.m-rec h2 
   <b:include name='quickedit'/>
 </b:includable>
       </b:widget>
-      <b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'>
+      <b:widget id='BlogArchive1' locked='false' title='Blog Arşivi' type='BlogArchive'>
         <b:widget-settings>
           <b:widget-setting name='showStyle'>MENU</b:widget-setting>
           <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
@@ -2715,7 +2883,7 @@ $(window).bind(&quot;load&quot;,function(){$(&#39;.Label a,.postags a,.m-rec h2 
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d2253546792861924862\x26blogName\x3dEveryDay.\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://barcelona-themexpose.blogspot.com/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttps://barcelona-themexpose.blogspot.com/\x26vt\x3d-8826221901913412530&#39;,
+              url: &#39;https://www.blogger.com/navbar.g?targetBlogID\x3d4821893459683631914\x26blogName\x3dR.C.P\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://recepkarademir.blogspot.com/search\x26blogLocale\x3dtr\x26v\x3d2\x26homepageUrl\x3dhttps://recepkarademir.blogspot.com/\x26vt\x3d4817143141764694060&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
@@ -2877,7 +3045,7 @@ head.appendChild(script);
    
 <!-- Footer Copyright --> 
 <div class='copyright'>
-Created By <a href='http://www.themexpose.com/' id='mycontent' title='Blogger Templates'>ThemeXpose</a> | <a href='https://copybloggerthemes.com/' rel='dofollow' title='Blogger Templates' target='_blank'>Copy Blogger Themes</a>
+Created By <a href='http://www.themexpose.com/' id='mycontent' title='Blogger Templates'>ThemeXpose</a> | <a href='https://copybloggerthemes.com/' rel='dofollow' target='_blank' title='Blogger Templates'>Copy Blogger Themes</a>
 </div>
 </div>
 </div>
