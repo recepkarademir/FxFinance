@@ -17,3 +17,5 @@ NOT:Bu proje iptal edilmiştir.
 
 Gluon (Scene Builder)</br>
 Freepik Company S.L. (FlatIcon)
+
+## BU PROJENİN KULLANILABİLİRLİK SEVİYESİ: 4/10
